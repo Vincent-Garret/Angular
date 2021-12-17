@@ -1,0 +1,16 @@
+.image {
+    background-image: url("../assets/img/Photo+agence.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-attachment: fixed;
+}
+
+.header{
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+}

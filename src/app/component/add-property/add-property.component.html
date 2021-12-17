@@ -1,0 +1,36 @@
+<h1 class="text-center py-5">Ajouter un bien</h1>
+
+<div class="d-flex justify-content-center mx-0">
+    <form [formGroup]="userForm" (ngSubmit)="submit()">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="name" formControlName="name" class="form-control">
+        </div>  
+        <div class="form-group">
+            <label>Prix</label>
+            <input type="number" id="price" formControlName="price" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Secteur</label>
+            <input type="text" id="sector" formControlName="sector" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Nombre de pièces</label>
+            <input type="number" id="roomNb" formControlName="roomNb" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Image</label>
+            <input type="file" id="picture" formControlName="picture" accept="image/png, image/jpeg" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <input type="text" id="description" formControlName="description" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Mots clés</label>
+            <input type="text" id="keywords" formControlName="keywords" class="form-control">
+        </div>
+
+        <button type="submit" class="btn-primary btn mx-2 my-2">Submit</button>
+    </form>
+<div>

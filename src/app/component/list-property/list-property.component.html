@@ -1,0 +1,20 @@
+
+<h1 class="text-center py-5">Les biens proposés</h1>
+
+<div class="d-flex justify-content-center mx-0">
+    <button *ngIf="roleUser" [routerLink]="['/properties/add']" routerLinkActive="router-link-active" class="btn btn-primary mb-4"> Ajouter un bien </button>
+</div>
+<div class="d-flex row justify-content-around mx-0">
+    <div *ngFor="let property of properties" class="card col-3 mx-2 my-2">
+        <div class="card-body">
+            <h5 class="card-title">{{ property.name }} </h5>
+            {{ property.price }} <br>
+            {{ property.sector }} <br>
+            {{ property.roomNb }} <br>
+            {{ property.picture }} <br>
+            <!-- <img src="{{ property.description }}" alt="">{{ property.description }} <br> -->
+            <button [routerLink]="['/details', property.id]" routerLinkActive="router-link-active"  class="btn btn-primary">Details</button>
+            <button (click)="deleteProperty(property.id)" class="btn btn-primary mx-2" >Delete</button>
+        </div>
+    </div>
+</div>

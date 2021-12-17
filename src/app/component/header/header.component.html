@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-between align-items-center header mx-0">
+  <p *ngIf="roleUser" class="m-3 col-7 text-center">Bonjour <span class="text-primary">{{ user.name }}</span> </p>
+  <div class="col-5">
+    <button [routerLink]="['/']" routerLinkActive="router-link-active" class="m-3 btn btn-primary">Liste des biens</button>
+    <button [routerLink]="['/users']" routerLinkActive="router-link-active" class="m-3 btn btn-primary">Liste des agents</button>
+    <button [routerLink]="['/categories']" routerLinkActive="router-link-active" class="m-3 btn btn-primary">Liste des catégories</button>
+    <button [routerLink]="['/login']" routerLinkActive="router-link-active" class="m-3 btn btn-primary">Se connecter</button>
+  </div>
+</div>

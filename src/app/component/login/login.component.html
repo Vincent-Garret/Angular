@@ -1,0 +1,15 @@
+<h1 class="text-center py-5">Se connecter</h1>
+
+<div class="d-flex justify-content-center mx-0">
+    <form [formGroup]="loginForm" (ngSubmit)="getToken()">
+        <div class="form-group">
+            <label for="">Email</label>
+            <input type="text" formControlName="name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Password</label>
+            <input type="text" formControlName="password" class="form-control">
+        </div>
+        <button type="submit" [disabled]="!loginForm.valid" class="btn-primary btn mx-2 my-2">Submit</button>
+    </form>
+</div>

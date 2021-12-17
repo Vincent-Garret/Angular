@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-center mx-0">
+    <div class="card" style="width: 30%;">
+        <h5 class="card-title px-3">{{ property?.name }} </h5>
+        <p class="card-text px-3">{{ property?.price }} </p>
+        <p class="card-text px-3">{{ property?.sector }} </p>
+        <p class="card-text px-3">{{ property?.roomNb }} </p>
+        <p class="card-text px-3">{{ property?.picture }} </p>
+        <p class="card-text px-3">{{ property?.description }} </p>
+    </div>
+</div>
+<div class="d-flex justify-content-center mt-4 mx-0">
+    <button [routerLink]="['']" routerLinkActive="router-link-active" class="btn btn-primary">Retour</button>
+</div>
